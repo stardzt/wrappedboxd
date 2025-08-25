@@ -1,0 +1,69 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: all;
+}
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Tienne:wght@400;700;900&display=swap');
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif, Tienne;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--color-base-300);
+  margin: 0;
+  display: flex;
+  place-items: center;
+}
+
+@font-face {
+  font-family: 'Bartex Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bartex Regular'), url('Bartex.woff') format('woff');
+}
+
+h1 {
+  font-family: 'Tienne';
+}
+
+h2 {
+  font-family: 'Permanent Marker';
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.material-icons {
+  font-size: 10px;
+  
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+@media screen and (max-width: 767px) {
+  .material-icons {
+    font-size: 6px;
+  }
+}
