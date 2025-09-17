@@ -2,6 +2,19 @@
 @plugin "daisyui" {
   themes: all;
 }
+@plugin "daisyui/theme" {
+  name: "resistance";
+  prefersdark: false; /* set as default dark mode (prefers-color-scheme:dark) */
+  color-scheme: light; /* color of browser-provided UI */
+
+  --color-base-100: oklch(89.85% 0.061 343.45);
+  --color-base-300: oklch(84.85% 0.094 344.36);
+  /* --color-base-100: oklch(92.32% 0.047 342.74); */
+  --color-base-content: oklch(55.05% 0.085 152.12);
+  --color-primary: oklch(55.05% 0.085 152.12);
+  --color-secondary: oklch(70.20% 0.144 346.58);
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Tienne:wght@400;700;900&display=swap');
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif, Tienne;

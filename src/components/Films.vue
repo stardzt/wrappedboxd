@@ -78,6 +78,14 @@
           aria-label="Lemonade"
           value="lemonade" />
       </li>
+      <li>
+        <input
+          type="radio"
+          name="theme-dropdown"
+          class="theme-controller w-full btn btn-sm btn-block btn-ghost justify-start rounded-sm"
+          aria-label="Resistance"
+          value="resistance"></input>
+      </li>
         <li>
         <input
           type="radio"
@@ -146,8 +154,8 @@
 </div>
 
 <!-- Films -->
-<div class="flex mx-auto ring-1 bg-base-100 ring-base-content/20 rounded-sm w-auto max-w-xs md:max-w-lg" v-if="parsedCsvData.length > 0">
-  <div ref="captureRef" id="capture" class="bg-base-100 rounded-sm">
+<div class="flex mx-auto ring-1 bg-base-100 ring-base-content/20 w-auto max-w-xs md:max-w-lg" v-if="parsedCsvData.length > 0">
+  <div ref="captureRef" id="capture" class="bg-base-100">
       <!-- Head -->
       <div>
           <div class="flex text-[7px] md:text-xs text-base-content/60 tracking-widest -mb-5 md:-mb-4 mt-4 px-4">
@@ -433,10 +441,19 @@ const handleDownload = async () => {
   try {
     const canvas = await html2canvas(node, {
       useCORS: true,
-      scale: 2,
+      scale: 2, // or window.devicePixelRatio
     })
+
+    // ✂️ Trim 1px–2px from bottom to remove line artifact
+    const trimmed = document.createElement('canvas')
+    trimmed.width = canvas.width
+    trimmed.height = canvas.height - 1 // cut off bottom 2px (adjust if needed)
+
+    const ctx = trimmed.getContext('2d')
+    ctx.drawImage(canvas, 0, 0)
+
     const link = document.createElement('a')
-    link.href = canvas.toDataURL('image/png')
+    link.href = trimmed.toDataURL('image/png')
     link.download = `Wrappedboxd_${selectedMonth.value.replace(' ', '_') || 'download'}.png`
     link.click()
   } catch (err) {

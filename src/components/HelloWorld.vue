@@ -9,7 +9,7 @@
     <span>What's new in <b>v2.0</b>: Added new options to change theme and poster.</span>
   </div> -->
 
-  <h2 class="text-base-content text-5xl mb-4">Wrappedboxd<span class="text-lg">v2.0</span></h2>
+  <h2 class="text-base-content text-5xl mb-4">Wrappedboxd<span class="text-lg">v2.1</span></h2>
   <div class="text-base-content tracking-wider text-sm">Created by dreamydxte/stardzt. Poster provided by <a class="link" target="_blank" href="https://www.themoviedb.org">TMDB</a> API.</div>
   <div class="flex justify-center gap-2 p-4">
     <a target="_blank" href="https://letterboxd.com/stardzt">
