@@ -1,11 +1,16 @@
 {
+<<<<<<< HEAD
   "name": "monthlyboxd",
+=======
+  "name": "wrappedboxd-2",
+>>>>>>> 9d7fae9032452178c1bf1034aa14bd3f2a750509
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+<<<<<<< HEAD
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -38,5 +43,22 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
     "vite": "^6.3.5"
+=======
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "html2canvas-pro": "^1.5.11",
+    "jszip": "^3.10.1",
+    "papaparse": "^5.5.3",
+    "tailwindcss": "^4.1.11",
+    "vue": "^3.5.17"
+  },
+  "devDependencies": {
+    "@types/papaparse": "^5.3.16",
+    "@vitejs/plugin-vue": "^6.0.0",
+    "daisyui": "^5.0.47",
+    "vite": "^7.0.4"
+>>>>>>> 9d7fae9032452178c1bf1034aa14bd3f2a750509
   }
 }
