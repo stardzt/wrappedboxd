@@ -2,7 +2,7 @@
 
 ![Wrappedboxd](public/screenshot.png)
 
-A simple web application that converts user diary from Letterboxd into a downloadable image template. Powered by Letterboxd API and TMDB API. You can visit the site here https://wrappedboxd.netlify.app/
+A simple web application that converts user diary from Letterboxd into a downloadable image template. Powered by Letterboxd API and TMDB API. Visit the site at https://wrappedboxd.netlify.app/.
 
 ### Key features
 - Display your film watches based on months.
