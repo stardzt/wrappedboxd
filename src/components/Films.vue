@@ -17,7 +17,7 @@
     <select 
       id="month-select" 
       v-model="selectedMonth" 
-      class="select select-sm bg-base-100 border-base-content/20 text-base-content text-sm rounded-sm uppercase font-bold tracking-widest max-w-xs"
+      class="select select-sm bg-base-100 border-base-content/20 text-base-content text-xs rounded-sm uppercase font-bold tracking-widest max-w-xs"
     >
       <option class="capitalize text-xs bg-base-100 text-base-content font-semibold"
         v-for="monthYear in Object.keys(groupedFilms).sort((a, b) => new Date(b) - new Date(a))" 
@@ -46,6 +46,7 @@
           aria-label="Default"
           value="default" />
       </li>
+      <li><div class="divider divider-start text-xs px-3">Light</div></li>
       <li>
         <input
           type="radio"
@@ -86,7 +87,8 @@
           aria-label="Resistance"
           value="resistance"></input>
       </li>
-        <li>
+      <li><div class="divider divider-start text-xs px-3">Dark</div></li>
+      <li>
         <input
           type="radio"
           name="theme-dropdown"

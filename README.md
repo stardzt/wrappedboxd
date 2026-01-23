@@ -1,4 +1,6 @@
-# Vue 3 + TypeScript + Vite
+A single page application that gives image template of monthly film watches from Letterboxd. Uses TMDB API to fetch film posters. You can visit the site here 'https://wrappedboxd.netlify.app/'.
+
+# How to Use
 
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
